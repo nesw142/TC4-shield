@@ -28,7 +28,7 @@
 
 ////////////////////
 // Temperature Unit
-//#define CELSIUS // controls only the initial conditions.  Comment out for F.
+#define CELSIUS // controls only the initial conditions.  Comment out for F.
 
 ////////////////////
 // LCD Options
@@ -67,8 +67,8 @@
 // permissable options:  typeT, typeK, typeJ
 #define TC_TYPE1 typeK  // thermocouple on TC1
 #define TC_TYPE2 typeK  // thermocouple on TC2
-#define TC_TYPE3 typeK  // thermocouple on TC3
-#define TC_TYPE4 typeK  // thermocouple on TC4
+//#define TC_TYPE3 typeK  // thermocouple on TC3
+//#define TC_TYPE4 typeK  // thermocouple on TC4
 
 ////////////////////
 // BAUD Rate for serial communications
@@ -115,7 +115,7 @@
 #define MAX_IO3 100  // Set output % for upper limit for IO3
 
 // cut power to Heater if fan duty is less than HTR_CUTOFF_FAN_VAL (to protect heater in air roaster). Set to 0 for no cutoff
-#define HTR_CUTOFF_FAN_VAL 0
+#define HTR_CUTOFF_FAN_VAL 15
 
 #define FAN_AUTO_COOL 100 // Set fan output duty for auto cool when using PID;STOP command
 
@@ -125,9 +125,9 @@
 
 ////////////////////
 // Temperature Reading Filters
-#define BT_FILTER 10 // filtering level (percent) for BT
-#define ET_FILTER 10 // filtering level (percent) for ET
-#define AMB_FILTER 70 // 70% filtering on ambient sensor readings
+//#define BT_FILTER 10 // filtering level (percent) for BT
+//#define ET_FILTER 10 // filtering level (percent) for ET
+//#define AMB_FILTER 70 // 70% filtering on ambient sensor readings
 
 // use RISE_FILTER to adjust the sensitivity of the RoR calculation
 // higher values will give a smoother RoR trace, but will also create more
